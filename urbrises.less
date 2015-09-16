@@ -281,10 +281,20 @@ h6 {
   }
 
   section {
+    margin-bottom: 2rem;
+
+    &::after {
+      border: 1px solid @urb-yellow;
+      content:'';
+      display: block;
+      margin-top: 4rem;
+      .mlrauto;
+      width: 5rem;
+    }
+
     p, pre, ul, ol, blockquote {
       font-size: 1.125rem;
       line-height: 1.5em;
-      font-weight: 300;
       white-space: normal;
     }
 
@@ -299,16 +309,25 @@ h6 {
       &:first-child {
         text-indent: 0;
       }
+      &:first-child:first-letter {
+        color: @urb-red;
+        float: left;
+        font-size: 5.75rem;
+        font-weight: bold;
+        line-height: 4rem;
+        padding-top: .33rem;
+        padding-right: .33rem;
+      }
+
     }
   }
-
 }
 
 .ad {
   background: #eee;
 }
 
-header {
+header.border-bottom {
   border-bottom: 1px solid @urb-red;
 }
 
@@ -317,6 +336,10 @@ main {
     padding-top: 1px;
     padding-bottom: 1px;
   }
+}
+
+.gradiented {
+  .gradient(@urb-red, @urb-yellow, 45deg);
 }
 
 #hero {
@@ -559,11 +582,6 @@ footer {
 
 }
 
-
-
-
-
-
 /**** some temporary mobile #hero fixes ****/
 @media (max-width:51.9999999999999em) {
   #hero {
@@ -587,4 +605,10 @@ footer {
       line-height: 2.75rem;
     }
   }
+}
+
+
+/**** updates for the "pupa" stage ****/
+body.pupa {
+  padding-top: 3rem;
 }

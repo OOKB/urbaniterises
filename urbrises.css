@@ -281,6 +281,18 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 }
+.simple-story section {
+  margin-bottom: 2rem;
+}
+.simple-story section::after {
+  border: 1px solid #ffd400;
+  content: '';
+  display: block;
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5rem;
+}
 .simple-story section p,
 .simple-story section pre,
 .simple-story section ul,
@@ -288,7 +300,6 @@ h6 {
 .simple-story section blockquote {
   font-size: 1.125rem;
   line-height: 1.5em;
-  font-weight: 300;
   white-space: normal;
 }
 .simple-story section p,
@@ -301,15 +312,38 @@ h6 {
 .simple-story section p:first-child {
   text-indent: 0;
 }
+.simple-story section p:first-child:first-letter {
+  color: #aa1824;
+  float: left;
+  font-size: 5.75rem;
+  font-weight: bold;
+  line-height: 4rem;
+  padding-top: .33rem;
+  padding-right: .33rem;
+}
 .ad {
   background: #eee;
 }
-header {
+header.border-bottom {
   border-bottom: 1px solid #aa1824;
 }
 main section {
   padding-top: 1px;
   padding-bottom: 1px;
+}
+.gradiented {
+  /* Fallback (could use .jpg/.png alternatively) */
+  background-color: #aa1824;
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image: -webkit-gradient(linear, 45deg, from(#aa1824), to(#ffd400));
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image: -webkit-linear-gradient(45deg, #aa1824, #ffd400);
+  /* Firefox 3.6 - 15 */
+  background-image: -moz-linear-gradient(45deg, #aa1824, #ffd400);
+  /* Opera 11.1 - 12 */
+  background-image: -o-linear-gradient(45deg, #aa1824, #ffd400);
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image: linear-gradient(45deg, #aa1824, #ffd400);
 }
 #hero {
   /* Fallback (could use .jpg/.png alternatively) */
@@ -612,4 +646,8 @@ footer a:active {
   #explain h1 {
     line-height: 2.75rem;
   }
+}
+/**** updates for the "pupa" stage ****/
+body.pupa {
+  padding-top: 3rem;
 }
