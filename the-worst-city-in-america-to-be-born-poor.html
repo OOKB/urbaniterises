@@ -1,0 +1,115 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>The Worst City in America to be Born Poor</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.0/basscss.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/mobilemenu.css">
+    <link rel="stylesheet" href="/urbrises.css">
+  </head>
+
+  <body class="story feature">
+
+    <header class="clearfix z999" id="main-menu">
+      <h1 class="h4 m0 p0"><a href="pupa.html" class="btn py2 scrolling">Urbanite Baltimore</a></h1>
+      <nav>
+        <ul>
+          <li><a href="pupa.html" class="h5 scrolling">Stories</a></li>
+          <li><a href="pupa.html#explain" class="h5 scrolling">An Explanation</a></li>
+          <li><a href="pupa.html#question" class="h5 scrolling">Share Your Thoughts</a></li>
+          <li><a href="pupa.html#contact" class="h5 scrolling">Contact</a></li>
+        </ul>
+
+        <button class="toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </nav>
+    </header>
+
+    <main>
+
+      <article class="simple-story mb4">
+        <header class="mb4 center px3 py4 white gradiented">
+          <div class="info py4">
+            <h1 class="mt4 mb0 regular league-gothic-stack allcaps hed">The Worst City In America To Be Born Poor</h1>
+            <h2 class="h3 dek">Young, poor, male, and Baltimorean: As bad as it gets?</h2>
+            <p class="byline m0"><em>by Michael Anft </em></p>
+<!--            <p class="credit"><em>Photograpy: Richard Avedon</em></p>-->
+          </div>
+        </header>
+
+        <section>
+          <p>Merely by being raised in a low-income Baltimore neighborhood, Freddie Gray was lost in a sea of disadvantage. A pair of Harvard economics professors produced a study in May (http://www.equality-of-opportunity.org/images/nbhds_paper.pdf) that showed that boys who grow up in poor Baltimore families later earn 1.4 percent less as adults for every year they’ve lived in impoverished areas. For Freddie, who spent his entire childhood (defined in the study as 20 years) in Sandtown, that meant he could expect 28 percent less in total adult income than children from average situations during his working life.</p>
+
+          <p>What’s more, Baltimore ranked worst among the nation’s 100 largest cities or counties in this regard. The city fits all too neatly into a pattern the Harvard professors, Raj Chetty and Nathaniel Hendren, discovered during their research of 5 million families who moved from one city or county to another: Racially segregated areas surrounded by suburban sprawl are especially vulnerable to growing kids who are more likely to have dire adulthoods.</p>
+
+          <p>Girls suffer too, losing about six percent in earnings as adults. But the effect on boys is especially stark, says Chetty. “What’s troublesome is that the situation we described in the study also generally means that those kids will later be faced with a higher probability of jail time, drug use, and teen pregnancies. All of these things seem to go together.”</p>
+
+          <p>The study doesn’t offer a template for avoiding such situations, though it strongly hints that the children of families who get out of neighborhoods like Sandtown do better. Children who eventually live in better areas earn higher incomes in their 20s, the study found, with each year lived in what the researchers call “higher-mobility communities” contributing to higher earnings.</p>
+        </section>
+      </article>
+
+    </main>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
+
+    <!-- CUSTOM JS CAN GO IN HERE -->
+    <script>
+      // Your JS/Jquery Here
+      $(".scrolling").click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
+      });
+    </script>
+
+    <script>
+      $(document).ready(function() {
+          $('button.toggle').click(function() {
+              $('header ul').slideToggle();
+          });
+      });
+
+      $(window).resize(function() {
+          ww = $(window).width();
+
+          if (ww > 768) {
+              $('header ul').show();
+          } else {
+              $('header ul').hide();
+          };
+
+      });
+    </script>
+
+    <script>
+      // google analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66835634-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <!-- end scripts-->
+
+  </body>
+
+</html>

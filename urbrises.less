@@ -256,6 +256,7 @@ h6 {
   .offset-by-two      { .col-offset(02); }
   .offset-by-three    { .col-offset(03); }
   .offset-by-four     { .col-offset(04); }
+  .offset-by-quarter  { margin-left: 25%; }
   .offset-by-five     { .col-offset(05); }
   .offset-by-six      { .col-offset(06); }
   .offset-by-seven    { .col-offset(07); }
@@ -272,6 +273,9 @@ h6 {
 
 /** styling! **/
 .simple-story {
+  h1.hed {
+    font-size: 6rem;
+  }
   h1,h2,h3,h4,h5,h6,p,
   .mw48rem {
     width: 45rem;
@@ -312,11 +316,12 @@ h6 {
       &:first-child:first-letter {
         color: @urb-red;
         float: left;
-        font-size: 5.75rem;
+        font-size: 6.33rem;
         font-weight: bold;
         line-height: 4rem;
         padding-top: .33rem;
         padding-right: .33rem;
+        margin-left: -.25rem;
       }
 
     }

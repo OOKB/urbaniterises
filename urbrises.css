@@ -230,6 +230,9 @@ h6 {
   .offset-by-four {
     margin-left: calc(26.66666667%);
   }
+  .offset-by-quarter {
+    margin-left: 25%;
+  }
   .offset-by-five {
     margin-left: calc(33.33333333%);
   }
@@ -268,6 +271,9 @@ h6 {
   }
 }
 /** styling! **/
+.simple-story h1.hed {
+  font-size: 6rem;
+}
 .simple-story h1,
 .simple-story h2,
 .simple-story h3,
@@ -315,11 +321,12 @@ h6 {
 .simple-story section p:first-child:first-letter {
   color: #aa1824;
   float: left;
-  font-size: 5.75rem;
+  font-size: 6.33rem;
   font-weight: bold;
   line-height: 4rem;
   padding-top: .33rem;
   padding-right: .33rem;
+  margin-left: -0.25rem;
 }
 .ad {
   background: #eee;
