@@ -12,19 +12,28 @@
 
     <link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.0/basscss.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/mobilemenu.css">
     <link rel="stylesheet" href="/urbrises.css">
   </head>
 
   <body class="story feature">
 
-    <header class="fixed top-0 left-0 right-0 clearfix bg-white z999 border-bottom">
-      <h1 class="left h4 m0 p0"><a href="#" class="btn py2">Urbanite Baltimore</a></h1>
-      <nav class="right">
-        <a href="#" class="h5 btn py2">Lorem</a>
-        <a href="#" class="h5 btn py2">Ipsum</a>
-        <a href="#" class="h5 btn py2">Dolor</a>
-        <a href="#" class="h5 btn py2">Veni</a>
-        <a href="#" class="h5 btn py2">Adis Plicit</a>
+    <header class="clearfix z999" id="main-menu">
+      <h1 class="h4 m0 p0"><a href="pupa.html" class="btn py2 scrolling">Urbanite Baltimore</a></h1>
+      <nav>
+        <ul>
+          <li><a href="pupa.html" class="h5 scrolling">Stories</a></li>
+          <li><a href="pupa.html#explain" class="h5 scrolling">An Explanation</a></li>
+          <li><a href="pupa.html#question" class="h5 scrolling">Share Your Thoughts</a></li>
+          <li><a href="pupa.html#contact" class="h5 scrolling">Contact</a></li>
+        </ul>
+
+        <button class="toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
       </nav>
     </header>
 
@@ -252,6 +261,41 @@
 
     <!-- CUSTOM JS CAN GO IN HERE -->
     <script>
+      // Your JS/Jquery Here
+      $(".scrolling").click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
+      });
+    </script>
+
+    <script>
+      $(document).ready(function() {
+          $('button.toggle').click(function() {
+              $('header ul').slideToggle();
+          });
+      });
+
+      $(window).resize(function() {
+          ww = $(window).width();
+
+          if (ww > 768) {
+              $('header ul').show();
+          } else {
+              $('header ul').hide();
+          };
+
+      });
+    </script>
+
+    <script>
+      // google analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66835634-1', 'auto');
+      ga('send', 'pageview');
 
     </script>
     <!-- end scripts-->
