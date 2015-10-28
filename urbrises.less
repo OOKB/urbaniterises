@@ -208,6 +208,14 @@ h6 {
   /** allows for better "adaptive" styling AND matching of gutter widths to line-heights **/
 }
 
+.group,.grouped,.row {
+  &::after {
+    content: '';
+    clear:both;
+    display: table;
+  }
+}
+
 .one,
 .two,
 .three,
@@ -222,7 +230,8 @@ h6 {
 .twelve,
 .thirteen,
 .fourteen,
-.fifteen  { .col(15); }
+.fifteen,
+.half { .col(15); }
 
 [class*="offset-by-"]      { .col-offset(00); }
 
@@ -241,7 +250,6 @@ h6 {
   .five     { .col(05); }
   .six      { .col(06); }
   .seven    { .col(07); }
-  .half     { width: 50%; }
   .eight    { .col(08); }
   .nine     { .col(09); }
   .ten      { .col(10); }
@@ -250,17 +258,20 @@ h6 {
   .thirteen { .col(13); }
   .fourteen { .col(14); }
   .fifteen  { .col(15); }
+  .quarter       { width: 25%; }
+  .third         { width: 33%; }
+  .half          { width: 50%; }
+  .twothirds     { width: 66%; }
+  .threequarters { width: 75%; }
   /** is there a more programmatic way to do this with less? some sort of function that would generate all of these??? **/
 
   .offset-by-one      { .col-offset(01); }
   .offset-by-two      { .col-offset(02); }
   .offset-by-three    { .col-offset(03); }
   .offset-by-four     { .col-offset(04); }
-  .offset-by-quarter  { margin-left: 25%; }
   .offset-by-five     { .col-offset(05); }
   .offset-by-six      { .col-offset(06); }
   .offset-by-seven    { .col-offset(07); }
-  .offset-by-half     { margin-left: 50%; }
   .offset-by-eight    { .col-offset(08); }
   .offset-by-nine     { .col-offset(09); }
   .offset-by-ten      { .col-offset(10); }
@@ -269,6 +280,9 @@ h6 {
   .offset-by-thirteen { .col-offset(13); }
   .offset-by-fourteen { .col-offset(14); }
   .offset-by-fifteen  { .col-offset(15); }
+  .offset-by-quarter  { margin-left: 25%; }
+  .offset-by-third    { margin-left: 33%; }
+  .offset-by-half     { margin-left: 50%; }
 }
 
 /** styling! **/
