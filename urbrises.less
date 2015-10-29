@@ -288,15 +288,10 @@ h6 {
 
 /** styling! **/
 h1.hed {
-  font-size: 6rem;
-}
-.hed, .dek {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 7rem;
 }
 
-section {
+.feature section {
   margin-bottom: 2rem;
 
   &::after {
@@ -339,7 +334,11 @@ section {
   }
 }
 
+.feature figure,
 figure {
+  margin: 0;
+  padding: 0 0 2rem 0;
+
   figcaption {
     p {
       font-size: .8rem;
@@ -358,16 +357,25 @@ blockquote.bigtype {
 }
 
 aside.sidebar {
-  background-color: lightblue;
-  padding: 1rem;
+  border: .66em solid @urb-yellow;
+  background: transparent;
+  box-shadow: none;
   font-size: 1rem;
   font-family: @gentium-stack;
+  margin: 1rem;
+
+  .inner {
+    padding: 1.25rem;
+  }
 
   h1 {
-    line-height: 1.25;
-    font-size: 2rem;
+    line-height: 1.1;
+    font-size: 2.25rem;
     font-family: @gentium-stack;
     margin: 0 0 1rem 0;
+  }
+  section::after {
+    display: none;
   }
 }
 
@@ -375,7 +383,7 @@ aside.sidebar {
   .feature {
     aside.sidebar {
       top: 200px;
-      box-shadow: 0 0 7px 0 rgba(0,0,0,.25);
+
     }
   }
 }
@@ -384,6 +392,15 @@ aside.sidebar {
     aside.sidebar {
       top: 300px;
       left: -12.5%;
+
+      .inner {
+        box-shadow: 0 0 7px 0 rgba(0,0,0,.25);
+        .gradient(@urb-green, @urb-yellow, 45deg);
+        top: 1.5em;
+        left: 1.5em;
+        width: calc(100% + 1.2em);
+        height: calc(100% + 1.2em);
+      }
     }
   }
 }
@@ -394,7 +411,24 @@ aside.sidebar {
   overflow: hidden;
   text-indent: 200%;
   white-space: nowrap;
+  background-size: contain;
 }
+
+/** running man specific **/
+#running-man header {
+  padding-bottom: 0;
+  .opener {
+    margin-top: -18rem;
+    padding-left: 0;
+    z-index: -1;
+  }
+}
+#running-man .hed,
+#running-man p .dropcap { color: @urb-green; }
+#running-man .endbud {
+  background-image: url('urbicon-grn.png');
+}
+
 
 .ad {
   background: #eee;
@@ -683,4 +717,48 @@ footer {
 /**** updates for the "pupa" stage ****/
 body.pupa {
   padding-top: 3rem;
+}
+
+.pupa .croppy {
+  display: block;
+  width: 100%;
+  padding-bottom: 75%;
+  overflow: hidden;
+  position: relative;
+}
+
+.pupa .croppy img {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  left: 0;
+  top: -50%;
+}
+
+/** better control header on homepage responsively **/
+#main-sidebar {
+  .logo {
+    margin-left: -4rem;
+  }
+  h1 {
+    line-height: 1;
+  }
+}
+
+@media (max-width:50em) {
+  #main-sidebar {
+    .logo, h1, .cover {
+      width: 50%;
+    }
+    .logo {
+      float: left;
+      margin-left: 0;
+    }
+    h1 {
+      margin-top: 1em;
+    }
+    .cover {
+      float: right;
+    }
+  }
 }
