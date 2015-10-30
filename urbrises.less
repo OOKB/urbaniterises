@@ -288,8 +288,35 @@ h6 {
 
 /** styling! **/
 h1.hed {
-  font-size: 7rem;
+  font-size: 3rem;
 }
+.metadata .dek {
+  font-size: 1.5rem;
+  color: gray;
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 50em) {
+  header .info {
+    padding-top: 4em;
+  }
+  h1.hed {
+    font-size: 7rem;
+  }
+  .metadata .dek {
+    font-size: 1.66em;
+    margin-bottom: 2em;
+  }
+}
+
+article.feature > header::after {
+    border: 1px solid @urb-yellow;
+    content:'';
+    display: block;
+    margin-top: 4rem;
+    .mlrauto;
+    width: 5rem;
+  }
 
 .feature section {
   margin-bottom: 2rem;
@@ -366,6 +393,7 @@ aside.sidebar {
 
   .inner {
     padding: 1.25rem;
+    .gradient(@urb-green, @urb-yellow, 45deg);
   }
 
   h1 {
@@ -382,24 +410,17 @@ aside.sidebar {
 @media (min-width: 50em) {
   .feature {
     aside.sidebar {
-      top: 200px;
-
-    }
-  }
-}
-@media (min-width: 75em) {
-  .feature {
-    aside.sidebar {
-      top: 300px;
-      left: -12.5%;
+      float: left;
+      width: 33%;
+      margin: 0;
+      left: 2em;
 
       .inner {
         box-shadow: 0 0 7px 0 rgba(0,0,0,.25);
-        .gradient(@urb-green, @urb-yellow, 45deg);
-        top: 1.5em;
-        left: 1.5em;
-        width: calc(100% + 1.2em);
-        height: calc(100% + 1.2em);
+        top: 1em;
+        left: 1em;
+        width: calc(100% + 1.25em);
+        height: calc(100% + 1.25em);
       }
     }
   }
@@ -418,9 +439,9 @@ aside.sidebar {
 #running-man header {
   padding-bottom: 0;
   .opener {
-    margin-top: -18rem;
-    padding-left: 0;
+    margin-top: -10rem;
     z-index: -1;
+    padding-bottom: 0;
   }
 }
 #running-man .hed,
@@ -429,6 +450,13 @@ aside.sidebar {
   background-image: url('urbicon-grn.png');
 }
 
+@media (min-width: 50em) {
+  #running-man header {
+    .opener {
+      margin-top: -18rem;
+    }
+  }
+}
 
 .ad {
   background: #eee;
@@ -759,6 +787,41 @@ body.pupa {
     }
     .cover {
       float: right;
+    }
+  }
+
+  .credit,
+  .credit.mt4 {
+    margin-top: 1rem;
+  }
+
+  .twothirds.mlrauto {
+      padding-left: 1em;
+      padding-right: 1em;
+  }
+  figure {
+    figcaption {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+  }
+  .divide-in-two-sm {
+    padding: 0 !important;
+
+    figure {
+      float: left;
+      width: 50%;
+      padding-left: 1em;
+      padding-right: 1em;
+      margin-top: 1.5em;
+      figcaption {
+        padding: 0;
+      }
+    }
+    &::after {
+      content: '';
+      clear:both;
+      display: table;
     }
   }
 }
