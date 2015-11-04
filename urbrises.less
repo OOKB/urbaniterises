@@ -83,6 +83,11 @@ h6 {
 .col(@span)        { width: calc(100% / @columns * @span); }
 .col-offset(@span) { margin-left: calc(100% / @columns * @span); }
 
+// ******************
+// ******************
+// ******************
+// ******************
+// ******************
 //colors
 @urb-red:       rgba(170, 24, 36,1);
 @urb-yellow:    rgba(255,212,  0,1);
@@ -129,6 +134,11 @@ h6 {
   /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
   background-image: linear-gradient(@direction, @c1, @c2);
 }
+// ******************
+// ******************
+// ******************
+// ******************
+// ******************
 
 .shadow {
   -moz-box-shadow:    0 0 5px 0 rgba(0,0,0,.25);
@@ -509,6 +519,10 @@ aside.sidebar {
   background-size: contain;
 }
 
+// *****************************
+// *****************************
+// *****************************
+// *****************************
 /** running man specific **/
 #running-man header {
   padding-bottom: 0;
@@ -539,6 +553,45 @@ aside.sidebar {
     }
   }
 }
+
+/** /end running man specific **/
+// *****************************
+// *****************************
+// *****************************
+// *****************************
+
+// *****************************
+// *****************************
+// *****************************
+// *****************************
+/** reconciliation specific **/
+#reconciliation .hed,
+#reconciliation p .dropcap { color: @urb-blue; }
+#reconciliation .endbud {
+  background-image: url('urbicon-blue.png');
+}
+/** /end reconcilitation specific **/
+// *****************************
+// *****************************
+// *****************************
+// *****************************
+
+// *****************************
+// *****************************
+// *****************************
+// *****************************
+/** reconciliation specific **/
+#save-sandtown .hed,
+#save-sandtown p .dropcap { color: @urb-sand; }
+#save-sandtown .endbud {
+  background-image: url('urbicon-sand.png');
+}
+/** /end reconcilitation specific **/
+// *****************************
+// *****************************
+// *****************************
+// *****************************
+
 
 .ad {
   background: #eee;
