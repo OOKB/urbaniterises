@@ -84,9 +84,15 @@ h6 {
 .col-offset(@span) { margin-left: calc(100% / @columns * @span); }
 
 //colors
-@urb-red:       rgba(170,24,36,1);
-@urb-yellow:    rgba(255,212,0,1);
-@urb-green:     rgba(125,167,68,1);
+@urb-red:       rgba(170, 24, 36,1);
+@urb-yellow:    rgba(255,212,  0,1);
+
+@urb-blue:      rgba( 79,123,138,1); /* reconciliation */
+@urb-green:     rgba(125,167, 68,1); /* running man */
+@urb-sand:      rgba(170,160,142,1); /* saving sandtown */
+@urb-purple:    rgba( 99, 69,126,1); /* songs in a key */
+@urb-orange:    rgba(234,142, 39,1); /* fifteen fixes */
+@urb-gray:      rgba(187,189,192,1); /* poems, etc. */
 
 @urb-white: white;
 @urb-black: black;
@@ -100,8 +106,14 @@ h6 {
   border-color: @urb-yellow;
 }
 
-.bg-red    { background-color: @urb-red; }
-.bg-yellow { background-color: @urb-yellow; }
+.bg-red     { background-color: @urb-red; }
+.bg-yellow  { background-color: @urb-yellow; }
+.bg-blue    { background-color: @urb-blue; }
+.bg-green   { background-color: @urb-green; }
+.bg-sand    { background-color: @urb-sand; }
+.bg-purple  { background-color: @urb-purple; }
+.bg-orange  { background-color: @urb-orange; }
+.bg-gray    { background-color: @urb-gray; }
 
 .gradient(@c1,@c2,@direction) {
   /* Fallback (could use .jpg/.png alternatively) */
@@ -130,13 +142,49 @@ h6 {
   text-shadow:         0 0 5px rgba(0,0,0,.25);
 }
 
+
+
+// ****************************************************
+// ****************************************************
+// ****************************************************
+// cool text gradients!
+// ****************************************************
+// ****************************************************
 .text-gradient {
-    color: @urb-red;
-    background-image: -webkit-linear-gradient(45deg,@urb-red,@urb-yellow);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
+  color: @urb-red;
+  background-image: -webkit-linear-gradient(45deg,@urb-red,@urb-yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
+
+// ****************************************************
+/** custom type colors on home page for each story **/
+#running-man .text-gradient {
+  color: @urb-green;
+  background-image: -webkit-linear-gradient(45deg,@urb-green,@urb-yellow);
+}
+#reconciliation .text-gradient {
+  color: @urb-blue;
+  background-image: -webkit-linear-gradient(45deg,@urb-blue,@urb-red);
+}
+#save-sandtown .text-gradient {
+  color: @urb-sand;
+  background-image: -webkit-linear-gradient(45deg,@urb-sand,@urb-yellow);
+}
+
+
+/** End custom type colorings.... **/
+// ****************************************************
+// ****************************************************
+// ****************************************************
+// ****************************************************
+// ****************************************************
+
+
+
+
+
 
 .visible-md {
   visibility: hidden;
@@ -507,9 +555,29 @@ main {
   }
 }
 
+// *********************************
+// cool custom background gradients
+// *********************************
 .gradiented {
   .gradient(@urb-red, @urb-yellow, 45deg);
 }
+
+// *********************************
+#running-man .gradiented {
+  .gradient(@urb-green, @urb-yellow, 45deg);
+}
+#reconciliation .gradiented {
+  .gradient(@urb-blue, @urb-red, 45deg);
+}
+#save-sandtown .gradiented {
+  .gradient(@urb-sand, @urb-yellow, 45deg);
+}
+
+// *********************************
+// *********************************
+// *********************************
+// *********************************
+
 
 #hero {
   .gradient(@urb-red, @urb-yellow, 45deg);
