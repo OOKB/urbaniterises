@@ -418,13 +418,26 @@ h1.hed {
 }
 
 article.feature > header::after {
-    border: 1px solid @urb-yellow;
-    content:'';
-    display: block;
-    margin-top: 4rem;
-    .mlrauto;
-    width: 5rem;
-  }
+  border: 1px solid @urb-yellow;
+  content:'';
+  display: block;
+  margin-top: 4rem;
+  .mlrauto;
+  width: 5rem;
+}
+
+#reconciliation.feature > header::after,
+#reconciliation.feature section::after {
+  border-color: @urb-red;
+}
+
+.feature section.interviewees {
+  padding-bottom: 3em;
+}
+.feature section.interviewees::after{
+  border: none;
+  margin-top: 0;
+}
 
 .feature section {
   margin-bottom: 2rem;
@@ -452,7 +465,8 @@ article.feature > header::after {
   }
 
   p {
-    &:first-child {
+    &:first-child,
+    &:first-of-type {
       text-indent: 0;
     }
     .dropcap {
@@ -465,7 +479,11 @@ article.feature > header::after {
       padding-right: .33rem;
       margin-left: -.25rem;
     }
+  }
 
+  p.new-person {
+    text-indent: 0;
+    margin-top: 1em;
   }
 }
 
@@ -485,11 +503,14 @@ figure {
 blockquote.bigtype {
   font-size: 2rem;
   line-height: 1.1;
-  color: @urb-green;
   padding: 0;
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+#running-man blockquote.bigtype    { color: @urb-green; }
+#reconciliation blockquote.bigtype { color: @urb-blue; }
+#save-sandtown blockquote.bigtype  { color: @urb-sand; }
 
 aside.sidebar {
   border: .66em solid @urb-yellow;
@@ -510,7 +531,8 @@ aside.sidebar {
     font-family: @gentium-stack;
     margin: 0 0 1rem 0;
   }
-  section::after {
+  section::after,
+  section.interviewees::after{
     display: none;
   }
 }
@@ -590,6 +612,8 @@ aside.sidebar {
 // *****************************
 /** reconciliation specific **/
 #reconciliation .hed,
+#reconciliation p.new-person strong,
+#reconciliation section h2,
 #reconciliation p .dropcap { color: @urb-blue; }
 #reconciliation .endbud {
   background-image: url('urbicon-blue.png');
@@ -1011,4 +1035,8 @@ body.pupa {
       display: table;
     }
   }
+}
+
+.not-quite-yet {
+  opacity: .25;
 }
