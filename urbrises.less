@@ -479,6 +479,25 @@ article.feature > header::after {
       padding-right: .33rem;
       margin-left: -.25rem;
     }
+
+    &.byline.small {
+      margin-top: 1em;
+      font-size: 1rem;
+      text-indent: 0;
+      padding-left: 1.5em;
+      font-style: italic;
+      color: gray;
+
+      em { font-style: normal; }
+
+      &::before {
+        content: '—';
+        display: block;
+        position: absolute;
+        left: 0;
+        color: gray;
+      }
+    }
   }
 
   p.new-person {
