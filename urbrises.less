@@ -206,19 +206,20 @@ h6 {
   color: @urb-sand;
   background-image: -webkit-linear-gradient(45deg,@urb-sand,@urb-yellow);
 }
-
-
+#fix-the-city .text-gradient {
+  color: @urb-orange;
+  background-image: -webkit-linear-gradient(45deg,@urb-yellow,@urb-orange);
+}
+#baltimore-key .text-gradient {
+  color: @urb-purple;
+  background-image: -webkit-linear-gradient(45deg,@urb-red,@urb-purple);
+}
 /** End custom type colorings.... **/
 // ****************************************************
 // ****************************************************
 // ****************************************************
 // ****************************************************
 // ****************************************************
-
-
-
-
-
 
 .visible-md {
   visibility: hidden;
@@ -645,20 +646,29 @@ aside.sidebar {
 
 // *****************************
 // *****************************
-// *****************************
-// *****************************
-/** reconciliation specific **/
+/** sandtown specific **/
 #save-sandtown .hed,
 #save-sandtown p .dropcap { color: @urb-sand; }
 #save-sandtown .endbud {
   background-image: url('urbicon-sand.png');
 }
-/** /end reconcilitation specific **/
-// *****************************
-// *****************************
+/** /end sandtown specific **/
 // *****************************
 // *****************************
 
+// fixit specific
+#fix-the-city .hed,
+#fix-the-city p .dropcap { color: @urb-orange; }
+#fix-the-city .endbud {
+  background-image: url('urbicon-orange.png');
+}
+
+// songs specific
+#baltimore-key .hed,
+#baltimore-key p .dropcap { color: @urb-purple; }
+#baltimore-key .endbud {
+  background-image: url('urbicon-purple.png');
+}
 
 .ad {
   background: #eee;
@@ -692,7 +702,12 @@ main {
 #save-sandtown .gradiented {
   .gradient(@urb-sand, @urb-yellow, 45deg);
 }
-
+#fix-the-city .gradiented {
+  .gradient(@urb-yellow, @urb-orange, 45deg);
+}
+#baltimore-key .gradiented {
+  .gradient(@urb-red, @urb-purple, 45deg);
+}
 // *********************************
 // *********************************
 // *********************************
@@ -988,12 +1003,33 @@ body.pupa {
   left: 0;
 }
 
+.pupa .feature {
+  padding-top: .75em;
+  padding-bottom: .75em;
+}
+.pupa .feature:hover {
+  background-color: rgba(100,100,100,.1);
+}
+
 #running-man .croppy img {
   top: -50%;
 }
 
 #save-sandtown .croppy img {
   bottom: 0;
+}
+
+#fix-the-city .croppy img {
+  width: 130%;
+  max-width: none;
+  left: -15%;
+}
+
+#baltimore-key .croppy img {
+  width: 140%;
+  max-width: none;
+  left: -10%;
+  top:-5%;
 }
 
 /** better control header on homepage responsively **/
