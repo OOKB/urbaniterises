@@ -1126,7 +1126,14 @@ header .opener {
 
 
 /** pickup locations **/
-.info { margin-bottom: .5em; }
+#pickups .list.loaded {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  font-size: .85rem;
+}
+
+.info { margin-bottom: .333333333em; }
 
 .info li {
   float: left;
@@ -1139,5 +1146,6 @@ header .opener {
     float: left;
   }
 }
+
 
 

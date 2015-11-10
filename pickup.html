@@ -49,7 +49,11 @@
 
       <article>
 
-        <div id="pickups" class="container mt4 py4 mb4">
+        <section class="container mt2">
+          <h1>2015 Pickup Locations</h1>
+        </section>
+
+        <div id="pickups" class="container mb4">
 
           <div class="button-bar border-bottom py2">
             <input class="search" placeholder="Search" />
@@ -72,6 +76,13 @@
         </div>
 
       </article>
+
+      <div id="sharing" class="mlrauto center">
+        <span class='st_facebook_large' displayText='Facebook'></span>
+        <span class='st_twitter_large' displayText='Tweet'></span>
+        <span class='st_email_large' displayText='Email'></span>
+        <span class='st_sharethis_large' displayText='ShareThis'></span>
+      </div>
 
     </main>
 
@@ -107,12 +118,6 @@
       </div>
     </footer>
 
-    <div id="sharing">
-      <span class='st_sharethis_large' displayText='ShareThis'></span>
-      <span class='st_facebook_large' displayText='Facebook'></span>
-      <span class='st_twitter_large' displayText='Tweet'></span>
-      <span class='st_email_large' displayText='Email'></span>
-    </div>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -154,6 +159,11 @@
         <ul class="info clearfix list-reset">
           <li class="business">{{business}}</li>
           <li >{{number}} <span class="street">{{address}}</span></li>
+          {{#city}}
+            {{#zipcode}}
+              <li >{{city}}, MD {{zipcode}}</li>
+            {{/zipcode}}
+          {{/city}}
         </ul>
       </li>
       {{/.}}
@@ -169,12 +179,16 @@
         $('#pickups .list').html(info);
 
         var options = {
-          valueNames: [ 'business', 'street' ]
+          valueNames: [ 'business', 'street' ],
+          page: 10000
         };
 
         var pickupList = new List('pickups', options);
         var checking = pickupList.size();
         console.log(checking);
+
+        $('#pickups .list').addClass('loaded');
+
       });
 
     </script>
