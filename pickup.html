@@ -50,13 +50,25 @@
       <article>
 
         <div id="pickups" class="container mt4 py4 mb4">
-          <ul class="list-reset center">
+
+          <div class="button-bar border-bottom py2">
+            <input class="search" placeholder="Search" />
+            <button class="sort right" data-sort="business">
+              Sort by Business
+            </button>
+            <button class="sort right" data-sort="street">
+              Sort by Street
+            </button>
+          </div>
+
+          <ul class="list-reset list mt2">
             <!-- filled with javascript magic -->
-            <li class="half mlrauto">
+            <li class="half mlrauto center mt4">
               <img src="urb-logo-trans2.png" />
               <p class="mt3">Due to some internet error, the pickup locations didn’t load ... please try refreshing your browser. If you have refreshed and you are still seeing this, we’re really sorry, and hopefully it will be sorted out shortly — please check back again soon.</p>
             </li>
           </ul>
+
         </div>
 
       </article>
@@ -134,6 +146,37 @@
           };
 
       });
+    </script>
+
+    <script id="location-info" type="text/template">
+      {{#.}}
+      <li class="pickupLocation">
+        <ul class="info clearfix list-reset">
+          <li class="business">{{business}}</li>
+          <li class="street">{{number}} {{address}}</li>
+        </ul>
+      </li>
+      {{/.}}
+    </script>
+
+    <script>
+
+      $.getJSON('https://sheetlabs.com/OOKB/urbanitePickups', function(data) {
+
+        //mustache for images
+        var template = $('#location-info').html();
+        var info = Mustache.to_html(template, data);
+        $('#pickups .list').html(info);
+
+        var options = {
+          valueNames: [ 'business', 'street' ]
+        };
+
+        var pickupList = new List('pickups', options);
+        var shite = pickupList.size();
+        console.log(shite);
+      });
+
     </script>
 
     <script>
