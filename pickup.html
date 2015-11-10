@@ -153,7 +153,7 @@
       <li class="pickupLocation">
         <ul class="info clearfix list-reset">
           <li class="business">{{business}}</li>
-          <li class="street">{{number}} {{address}}</li>
+          <li >{{number}} <span class="street">{{address}}</span></li>
         </ul>
       </li>
       {{/.}}
@@ -173,8 +173,8 @@
         };
 
         var pickupList = new List('pickups', options);
-        var shite = pickupList.size();
-        console.log(shite);
+        var checking = pickupList.size();
+        console.log(checking);
       });
 
     </script>
