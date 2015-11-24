@@ -1,0 +1,170 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Voices Rising Up</title>
+
+<!--    <link href="https://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.0/basscss.min.css" rel="stylesheet">-->
+    <link href="/basscss.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/mobilemenu.css">
+    <link rel="stylesheet" href="/urbrises.css">
+
+    <!-- sharing JS -->
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "3ea01beb-245a-4ee1-bc92-6adc6347e4d0", doNotHash: false, doNotCopy: false, hashAddressBar: true});</script>
+
+  </head>
+
+  <body class="story feature">
+
+    <header class="clearfix z999" id="main-menu">
+      <h1 class="h4 m0 p0"><a href="/" class="btn py2">Urbanite Baltimore</a></h1>
+      <nav>
+        <ul>
+          <li><a href="/" class="h5">Stories</a></li>
+          <li><a href="/#explain" class="h5">An Explanation</a></li>
+          <li><a href="/#question" class="h5">Share Your Thoughts</a></li>
+          <li><a href="#contact" class="h5 scrolling">Contact</a></li>
+          <li><a href="/pickup.html" class="h5 scrolling">Pickup Locations</a></li>
+        </ul>
+
+        <button class="toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- A Case For Reconciliation! -->
+      <article class="mb4 feature" id="fix-the-city">
+        <header class="mb4">
+          <div class="info">
+            <h1 class="mt4 mb0 regular league-gothic-stack allcaps hed center">Voices Rising Up</h1>
+            <div class="group">
+              <figure class="opener fifteen columns">
+                <img class="fullwidth xtra-wide" src="fixthecity-header.jpg" />
+              </figure>
+              <div class="metadata half mlrauto move-up center">
+<!--                <h2 class="h3 dek ">TK</h2>-->
+<!--                <p class="credit small">Illustrations by Tom Chalkley</p>-->
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="container" id="intro">
+          <div class="group">
+            <div class="ten mlrauto">
+              <p class="lead">
+                There is not one Baltimore. There are many. These poems are just a brief
+glimpse of the city's tones, tongues, and tribes, and they show, we hope, the
+ways that poems—and people—reflect both the uprising, and the causes of it.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div id="sharing" class="mlrauto center py2">
+          <span class='st_facebook_large' displayText='Facebook'></span>
+          <span class='st_twitter_large' displayText='Tweet'></span>
+          <span class='st_email_large' displayText='Email'></span>
+          <span class='st_sharethis_large' displayText='ShareThis'></span>
+        </div>
+      </article>
+
+    </main>
+
+    <footer class="white bg-black px1 py4" id="contact">
+      <div class="container">
+        <div class="clearfix">
+          <div class="five columns">
+            <h1 class="h4 caps py1 border-bottom">Sponsors</h1>
+            <p class="mb4">
+              Please contact Jean Meconi at <a href="tel:443-257-5767" value="+14432575767" target="_blank">443-257-5767</a> or <a href="mailto:Urbanitejean@gmail com" target="_blank">Urbanitejean@gmail com</a> for advertising and sponsorship opportunities.
+            </p>
+          </div>
+          <div class="five columns">
+            <h1 class="h4 caps py1 border-bottom">Archive</h1>
+            <i class="fa fa-book fa-3x left mr1"></i>
+            <p class="mb4"><a href="http://issuu.com/urbanitemagazine">Past issues of Urbanite can currently be found on Issuu.com</a></p>
+          </div>
+          <div class="five columns">
+            <h1 class="h4 caps py1 border-bottom">Contact</h1>
+            <div class="clearfix">
+              <i class="fa fa-envelope fa-3x left mr1 mb2"></i>
+              <p>team@urbanitebaltimore.com</p>
+            </div>
+            <ul class="list-reset mb4">
+              <li class="inline-block mr1"><a href="https://www.facebook.com/pages/Urbanite-Magazine/14657547391"><i class="fa fa-facebook-square fa-2x white"></i></a></li>
+              <li class="inline-block mr1"><a href="https://twitter.com/urbanitemd"><i class="fa fa-twitter-square fa-2x white"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="h6 mb0 py1 border-top">&copy; 2015 Urbanite Baltimore — Thanks to all the helpers making this possible</p>
+        <p class="h6 mt0 right">Built by <a class="white" href="http://www.ookb.co/">OOKB</a> / Powered by <a class="white" href="http://www.cape.io">CAPE</a></p>
+      </div>
+    </footer>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
+
+    <!-- CUSTOM JS CAN GO IN HERE -->
+    <script>
+      // Your JS/Jquery Here
+      $(".scrolling").click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
+      });
+    </script>
+
+    <script>
+      $(document).ready(function() {
+          $('button.toggle').click(function() {
+              $('header ul').slideToggle();
+          });
+      });
+
+      $(window).resize(function() {
+          ww = $(window).width();
+
+          if (ww > 768) {
+              $('header ul').show();
+          } else {
+              $('header ul').hide();
+          };
+
+      });
+    </script>
+
+    <script>
+      // google analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66835634-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <!-- end scripts-->
+
+  </body>
+
+</html>
