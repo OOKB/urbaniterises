@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Voices Rising Up</title>
+    <title>Voices Rising Up: The City That Breathes</title>
 
 <!--    <link href="https://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.0/basscss.min.css" rel="stylesheet">-->
     <link href="/basscss.css" rel="stylesheet">
@@ -50,47 +50,70 @@
       <article class="mb4 feature" id="voices-rising-up">
         <header class="mb4">
           <div class="info">
-            <h1 class="mt4 mb0 regular league-gothic-stack allcaps hed center">Voices Rising Up</h1>
+            <h1 class="mt4 mb0 regular league-gothic-stack allcaps hed center">The City That Breathes</h1>
             <div class="group">
-              <figure class="opener fifteen columns">
-                <img class="fullwidth xtra-wide" src="I-wish-it-were-that-Easy-web.jpg" />
-              </figure>
               <div class="metadata half mlrauto move-up center">
-<!--                <h2 class="h3 dek ">TK</h2>-->
-                <p class="byline small">Curated by Ailish Hopper and Olu Butterfly Woods</p>
-                <p class="credit small">Illustrations by Stephen Towns</p>
+                <p class="byline small">by Douglas William Garcia Mowbray</p>
               </div>
             </div>
           </div>
         </header>
 
-        <section class="container" id="intro">
+        <section class="container poem">
           <div class="group">
-            <div class="ten mlrauto">
+            <div class="six mlrauto no-indent">
               <p class="lead">
-                There is not one Baltimore. There are many. These poems are just a brief glimpse of the city's tones, tongues, and tribes, and they show, we hope, the ways that poems—and people—reflect both the uprising, and the causes of it.
+                The city cat perches<br/>
+                on the city backyard fence<br/>
+                still ogling the squirrel<br/>
+                who makes himself dizzy<br/>
+                scurrying around<br/>
+                the trunk of the gingko tree.
               </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="container" id="intro">
-          <div class="group">
-            <div class="ten mlrauto">
-              <ul id="poetry-list" class="lead">
-
-                <script id="poetry-items" type="text/x-mustache-template">
-                  {{#poems}}
-                  <li class="poem">
-                    <a class="wrapping" href="{{file}}">
-                      <h2 class="title">{{title}}</h2>
-                      <p class="byline small">By {{byline}}</p>
-                    </a>
-                  </li>
-                  {{/poems}}
-                </script>
-
-              </ul>
+              <p class="lead">
+                The gingko drops<br/>
+                thousands of seeds<br/>
+                and hundreds of futile seeds<br/>
+                will latch into the city backyard<br/>
+                while the other hundreds<br/>
+                and hundreds perfume<br/>
+                the neighbor’s yard with<br/>
+                their dog vomit declaration.
+              </p>
+              <p class="lead">
+                An unorganized chess match<br/>
+                of nothing but bishops<br/>
+                underneath the grand shadow<br/>
+                of one mighty gingko<br/>
+                long since given up the outrage<br/>
+                persevering for decades<br/>
+                in this city backyard behind<br/>
+                a neglected city house.
+              </p>
+              <p class="lead">
+                The squirrel scurries on<br/>
+                drunk on inertia<br/>
+                ignoring the seed bombs<br/>
+                and the helicopter foster parents in blue<br/>
+                and the foul-mouthed rat,<br/>
+                no longer bemused<br/>
+                at neglected city houses.
+              </p>
+              <p class="lead">
+                This city aches with defiance<br/>
+                of asphalt and concrete.<br/>
+                It aches with three kinds of defiance—<br/>
+                neglect, outrage, inertia.
+              </p>
+              <p class="lead">
+                It aches. It defies.
+              </p>
+              <p class="lead">
+                This city deifies its aches.
+              </p>
+              <p class="byline small">
+                Douglas William Garcia Mowbray
+              </p>
             </div>
           </div>
         </section>
@@ -141,21 +164,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
     <script src="/js/urb.js"></script>
-
-    <!-- CUSTOM JS CAN GO IN HERE -->
-    <script>
-      //page specific
-      $.getJSON('poetry-list.json', function(data) {
-        var template = $('#poetry-items').html();
-        var info = Mustache.to_html(template, data);
-        $('#poetry-list').html(info);
-        console.log('mustachified');
-      });
-    </script>
-
     <script src="/js/ga.js"></script>
     <!-- end scripts-->
 
