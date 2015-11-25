@@ -339,18 +339,31 @@
     <footer class="white bg-black px1 py4" id="contact">
       <div class="container">
         <div class="clearfix">
-          <div class="five columns">
+          <div class="quarter columns mb4">
+            <h1 class="h4 caps py1 border-bottom">#100 Stories</h1>
+            <ul class="list-reset">
+              <li><a href="/100/the-running-man/">The Running Man</a></li>
+              <li><a href="/100/the-case-for-reconciliation/">The Case For Reconciliation</a></li>
+              <li><a href="/100/who-can-save-sandtown/">Who Can Save Sandtown</a></li>
+              <li><a href="/100/fix-the-city/">Fix The City</a></li>
+              <li><a href="/100/why-local-media-matters/">Why Local Media Matters</a></li>
+              <li><a href="/100/songs-in-a-key-called-baltimore/">Songs in a Key Called Baltimore</a></li>
+              <li><a href="/100/the-fire-last-time/">The Fire The Last Time</a></li>
+              <li><a href="/100/voices-rising-up/">Voices Rising Up</a></li>
+            </ul>
+          </div>
+          <div class="quarter columns">
             <h1 class="h4 caps py1 border-bottom">Sponsors</h1>
             <p class="mb4">
               Please contact Jean Meconi at <a href="tel:443-257-5767" value="+14432575767" target="_blank">443-257-5767</a> or <a href="mailto:Urbanitejean@gmail com" target="_blank">Urbanitejean@gmail com</a> for advertising and sponsorship opportunities.
             </p>
           </div>
-          <div class="five columns">
+          <div class="quarter columns">
             <h1 class="h4 caps py1 border-bottom">Archive</h1>
             <i class="fa fa-book fa-3x left mr1"></i>
             <p class="mb4"><a href="http://issuu.com/urbanitemagazine">Past issues of Urbanite can currently be found on Issuu.com</a></p>
           </div>
-          <div class="five columns">
+          <div class="quarter columns">
             <h1 class="h4 caps py1 border-bottom">Contact</h1>
             <div class="clearfix">
               <i class="fa fa-envelope fa-3x left mr1 mb2"></i>
@@ -363,6 +376,18 @@
           </div>
         </div>
 
+        <div class="clearfix mb3">
+          <div class="five columns center">
+            <a href="pickup.html" class="button btn btn-primary bg-yellow black caps h6 block">Find a pickup location</a>
+          </div>
+          <div class="five columns center">
+            <a href="http://www.amazon.com/Urbanite-November-2015-Issue-Reconciliation/dp/1518897649/" class="button btn btn-primary bg-red white caps h6 block">Buy it on Amazon.com</a>
+          </div>
+          <div class="five columns center">
+            <a href="/100/UrbaniteIssue100November2015.pdf" class="button btn btn-primary bg-blue white caps h6 block">Download Issue #100 as a PDF</a>
+          </div>
+        </div>
+
         <p class="h6 mb0 py1 border-top">&copy; 2015 Urbanite Baltimore — Thanks to all the helpers making this possible</p>
         <p class="h6 mt0 right">Built by <a class="white" href="http://www.ookb.co/">OOKB</a> / Powered by <a class="white" href="http://www.cape.io">CAPE</a></p>
       </div>
@@ -372,48 +397,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
-
-    <!-- CUSTOM JS CAN GO IN HERE -->
-    <script>
-      // Your JS/Jquery Here
-      $(".scrolling").click(function(event){
-        event.preventDefault();
-        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
-      });
-    </script>
-
-    <script>
-      $(document).ready(function() {
-          $('button.toggle').click(function() {
-              $('header ul').slideToggle();
-          });
-      });
-
-      $(window).resize(function() {
-          ww = $(window).width();
-
-          if (ww > 768) {
-              $('header ul').show();
-          } else {
-              $('header ul').hide();
-          };
-
-      });
-    </script>
-
-    <script>
-      // google analytics
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-66835634-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+    <script src="/js/urb.js"></script>
+    <script src="/js/ga.js"></script>
     <!-- end scripts-->
 
   </body>
