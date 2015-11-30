@@ -214,6 +214,10 @@ h6 {
   color: @urb-purple;
   background-image: -webkit-linear-gradient(45deg,@urb-red,@urb-purple);
 }
+#voices-rising-up .text-gradient {
+  color: @urb-gray;
+  background-image: -webkit-linear-gradient(45deg,@urb-gray,@urb-yellow);
+}
 /** End custom type colorings.... **/
 // ****************************************************
 // ****************************************************
@@ -685,6 +689,13 @@ aside.sidebar {
   background-image: url('urbicon-purple.png');
 }
 
+// poems specific
+#voices-rising-up .hed,
+#voices-rising-up p .dropcap { color: @urb-gray; }
+#voices-rising-up .endbud {
+  background-image: url('urbicon-gray.png');
+}
+
 .ad {
   background: #eee;
 }
@@ -722,6 +733,9 @@ main {
 }
 #baltimore-key .gradiented {
   .gradient(@urb-red, @urb-purple, 45deg);
+}
+#voices-rising-up .gradiented {
+  .gradient(@urb-gray, @urb-yellow, 45deg);
 }
 // *********************************
 // *********************************
@@ -1178,6 +1192,34 @@ header .opener {
     display: block;
     margin-right: 1em;
     float: left;
+  }
+}
+
+// poetry related
+// poetry related
+// poetry related
+#poetry-list {
+  .poem {
+    margin-left: -.5em;
+    margin-right: -.5em;
+
+    a.wrapping {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      padding: .5em;
+
+      &:hover {
+        background-color: lighten(@urb-gray,22%);
+      }
+    }
+
+    h2.title {
+      margin: 0;
+    }
+    p.byline.small {
+      margin-top: .25em;
+    }
   }
 }
 
