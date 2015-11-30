@@ -1,12 +1,55 @@
 {
   "poems": [
     {
+      "title": "Baltimore",
+      "byline": "Mike Murphy",
+      "file": "baltimore.html",
+      "image": ""
+    },
+    {
+      "title": "True Blood",
+      "byline": "Slangston Hughes",
+      "file": "true-blood.html",
+      "image": ""
+    },
+    {
+      "title": "Everyday",
+      "byline": "Katie Lautar",
+      "file": "everyday.html",
+      "image": ""
+    },
+    {
+      "title": "The Alley Less Traveled",
+      "byline": "Douglas William Garcia Mowbray",
+      "file": "the-alley-less-traveled.html",
+      "image": "",
+      "bio": "Douglas William Garcia Mowbray lives in Waverly with his wife and son. He is co-founder of Poetry in Community, and an Assistant Director of the Baltimore Community Poetry Library."
+    },
+    {
       "title": "The City that Breathes",
       "sub": "Baltimore, 2014",
       "byline": "Douglas William Garcia Mowbray",
       "file": "the-city-that-breathes.html",
       "image": "",
       "bio": "Douglas William Garcia Mowbray lives in Waverly with his wife and son. He is co-founder of Poetry in Community, and an Assistant Director of the Baltimore Community Poetry Library."
+    },
+    {
+      "title": "Safe",
+      "byline": "Sheila Gaskins",
+      "file": "safe.html",
+      "image": ""
+    },
+    {
+      "title": "Baltimore Call-and-Response",
+      "byline": "Marcus Civin",
+      "file": "baltimore-call-and-response.html",
+      "image": ""
+    },
+    {
+      "title": "All the best teachers",
+      "byline": "Marcus Civin",
+      "file": "all-the-best-teachers.html",
+      "image": ""
     },
     {
       "title": "Tender Bricks",
@@ -17,18 +60,18 @@
       "bio": "Sean Morrissey currently serves as artist-in-residence at the Johns Hopkins Children's Center and is an active member of the Right to Housing Alliance."
     },
     {
-      "title": "Ode to dead black Baltimore boys",
-      "byline": "Chin-yer Wright",
-      "file": "ode-to-dead-black-baltimore-boys.html",
-      "image": "",
-      "bio": "Chin-yer Wright is the founder and executive director of the the Baltimore Scene art movement. She organizes the city’s Word War poetry slam series, the Baltimore Crown Awards, Rap God, and other artistic events for youth and artists."
-    },
-    {
       "title": "Judge me not",
       "byline": "Taylor King",
       "file": "judge-me-not.html",
       "image": "",
       "bio": "Taylor M. King is 24, and a single mother. She played Zenobia in season four of <em>The Wire</em>, and in May of 2015 was included in the cast of <em>Listen to Your Mother</em>. She lives in Baltimore and dreams of becoming a published author."
+    },
+    {
+      "title": "Ode to dead black Baltimore boys",
+      "byline": "Chin-yer Wright",
+      "file": "ode-to-dead-black-baltimore-boys.html",
+      "image": "",
+      "bio": "Chin-yer Wright is the founder and executive director of the the Baltimore Scene art movement. She organizes the city’s Word War poetry slam series, the Baltimore Crown Awards, Rap God, and other artistic events for youth and artists."
     }
   ]
 }
