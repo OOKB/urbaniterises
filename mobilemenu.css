@@ -72,6 +72,7 @@
   background: gray;
 }
 
+/** This is for smaller stuff! **/
 @media (max-width: 767px) {
   #main-menu h1 {
     position: fixed;
@@ -99,6 +100,7 @@
   }
 }
 
+/** this is for bigger stuff! **/
 @media (min-width: 768px) {
   #main-menu h1 { float: left; }
   #main-menu nav { float: right; }
